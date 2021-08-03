@@ -1,0 +1,79 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Made Easy</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
+     rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'css/main_sam.css' %}">
+</head>
+<body>
+    <header class="bg-light text-center">
+        <div class="container container--narrow">
+            <h1>Woolworths Sports Football Club</h1>
+            <p>Established 2020</p>
+        </div>
+    </header>
+
+<section>
+    <div class="container">
+        <h2 class="text-center">Rochdale Heritage</h2>
+        <div class="split">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolor vero atque quae aliquid porro impedit molestiae qui assumenda quia nesciunt consectetur. Sequi, cupiditate at?</p>
+            </div>
+            <div>
+                <p>Saepe ab consequatur perspiciatis ipsam quisquam quam sint odit facere, voluptatem ex cupiditate ad temporibus adipisci quo accusamus doloremque. Obcaecati repellat ut aperiam consequatur vel?</p>
+            </div>
+            <div>
+                <p>Saepe ab consequatur perspiciatis ipsam quisquam quam sint odit facere, voluptatem ex cupiditate ad temporibus adipisci quo accusamus doloremque. Obcaecati repellat ut aperiam consequatur vel?</p>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary">
+    <div class="container text-center">
+        <h2>Fixtures and Results</h2>
+        {% for match in list_of_matches %}
+              <li>{{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</li>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="bg-dark">
+    <div class="container">
+        <div class="split">
+            <div>
+                <h2>A great bunch of lads</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vero, voluptatem nulla non pariatur quod!</p>
+            </div>
+            <div>
+                <img src="{% static 'img/ball.jpeg' %}" alt="squad pic">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary">
+    <div class="container">
+        <div class="split">
+            <div>
+                <img src="{% static 'img/celebrate.jpg' %}" alt="squad pic">
+            </div>
+            <div>
+                <h2>Created with care</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo minima eum distinctio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
