@@ -5,8 +5,8 @@
     --clr-neutral-100: #fff;
     --clr-neutral-900: #222c2a;
   
-    --ff-primary: "Roboto", sans-serif;
-    --ff-accent: "Playfair Display", serif;
+    --ff-primary: "Lato";
+    --ff-accent: "Bebas Neue";
   }
 
 *,
@@ -15,12 +15,23 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url("/static/img/robbie.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: var(--clr-neutral-100);
+    text-shadow: 2px 2px black;
+}
+
 body {
     font-family: var(--ff-primary);
-    font-weight: 400;
+    font-weight: 375;
     font-size: 1.3125rem;
     line-height: 1.6;
+    background: url();
 }
+
 body,
 h1,
 h2,
@@ -29,10 +40,18 @@ p {
     margin: 0;
 }
 
-h1,
+h1 {
+    color: var(--clr-neutral-100);
+}
+
 h2,
 h3 {
     color: var(--clr-primary-400);
+}
+
+h1,
+h2,
+h3 {
     font-family: var(--ff-accent);
     font-weight: 900;
     line-height: 1;
@@ -87,6 +106,7 @@ section {
     }
 }
 
+
 .bg-light { 
     background-color: var(--clr-primary-200);
 }
@@ -108,3 +128,4 @@ section {
 .bg-dark h2 {
     color: var(--clr-primary-200);
 }
+
