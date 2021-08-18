@@ -5,32 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Made Easy</title>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
+    <title>Woolworths Sports Football Club</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
      rel="stylesheet">
-     <link rel="stylesheet" href="{% static 'css/main_sam.css' %}">
+     <!-- CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/main_sam.css' %}">
 </head>
+
+
 <body>
-    <header class="header text-center">
-        <div class="container container--narrow">
-            <h1>Woolworths Sports Football Club</h1>
+
+<header class="header text-center">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary-sam fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="{% static 'img/badge.png' %}" width="30" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+            </div>
         </div>
-    </header>
+    </nav>
+</header>
+
+<section class="main">
+    <div class="container container--narrow text-center">
+        <h1>Woolworths Sports Football Club</h1>
+    </div>
+</section>
 
 <section class="bg-dark">
     <div class="container">
-        <h2 class="text-center">Rochdale Heritage</h2>
+        <h2 class="text-center">ESTABLISHED 2020</h2>
         <div class="split">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolor vero atque quae aliquid porro impedit molestiae qui assumenda quia nesciunt consectetur. Sequi, cupiditate at?</p>
+                <p>Following a succesful debut season in the Rochdale, Bury, and District Sunday Football League Division Four, WSFC look forward to taking on teams in Division Two.</p>
             </div>
             <div>
-                <p>Saepe ab consequatur perspiciatis ipsam quisquam quam sint odit facere, voluptatem ex cupiditate ad temporibus adipisci quo accusamus doloremque. Obcaecati repellat ut aperiam consequatur vel?</p>
+                <p>Formed during the depths of the global pandemic, we have thouroughly enjoyed the challenge so far and found it a pleasure to compete in the RBDSFL.</p>
             </div>
             <div>
-                <p>Saepe ab consequatur perspiciatis ipsam quisquam quam sint odit facere, voluptatem ex cupiditate ad temporibus adipisci quo accusamus doloremque. Obcaecati repellat ut aperiam consequatur vel?</p>
+                <p>We play our home matches at Matthew Moss High School in Rochdale. We are proudly sponsored by DT Law Butchers, Altered Notion, and 01706.</p>
             </div>
         
         </div>
@@ -51,7 +74,7 @@
     </div>
 </section>
 
-<section class="bg-primary">
+<section class="bg-primary-sam">
     <div class="container">
         <div class="split">
             <div>

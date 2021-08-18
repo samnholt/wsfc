@@ -15,14 +15,6 @@
     box-sizing: border-box;
 }
 
-header {
-    background-image: url("/static/img/robbie.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    font-family: var(--clr-neutral-100);
-    text-shadow: 2px 2px black;
-}
 
 body {
     font-family: var(--ff-primary);
@@ -63,6 +55,16 @@ p {
     margin-bottom: 1em;
 }
 
+.main {
+    background-image: url("/static/img/robbie.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: var(--clr-neutral-100);
+    text-shadow: 2px 2px black;
+    margin-top: 34px;
+}
+
 
 img {
     display: block;
@@ -73,7 +75,10 @@ img {
     text-align: center;
 }
 
-header,
+header {
+    padding: 1rem;
+}
+
 section {
     padding: 3rem 0;
 }
@@ -111,7 +116,7 @@ section {
     background-color: var(--clr-primary-200);
 }
 
-.bg-primary { 
+.bg-primary-sam { 
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
 }
