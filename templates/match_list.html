@@ -8,7 +8,7 @@
     <div class="container text-center">
         <h2 style='color: white'>Fixtures and Results</h2>
         {% for match in list_of_matches %}
-              <li>{{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</li>
+              <p>{{ match.match_date|date:"j N" }} - {{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</p>
         {% endfor %}
     </div>
 </section>
