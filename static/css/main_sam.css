@@ -36,17 +36,12 @@ h1 {
     color: var(--clr-neutral-100);
 }
 
-h2,
-h3 {
-    color: var(--clr-primary-400);
-}
 
 h1,
 h2,
 h3 {
     font-family: var(--ff-accent);
     font-weight: 900;
-    line-height: 1;
 }
 
 h2,
@@ -83,6 +78,15 @@ section {
     padding: 3rem 0;
 }
 
+table {
+    font-family: var(--clr-neutral-100);
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container--narrow {
     max-width: 300rem;
 }
@@ -111,6 +115,16 @@ section {
     }
 }
 
+.page-title {
+    padding: 0.5rem 0;
+}
+
+.page-title h2 {
+    color: var(--clr-neutral-100);
+    margin-bottom: 0;
+    text-shadow: black 2px 2px
+}
+
 
 .bg-light { 
     background-color: var(--clr-primary-200);
@@ -132,5 +146,14 @@ section {
 
 .bg-dark h2 {
     color: var(--clr-primary-200);
+}
+
+#club-info{
+    width: 100%;
+}
+
+#club-info td, th {
+    color: var(--clr-neutral-100);
+    text-align: center
 }
 

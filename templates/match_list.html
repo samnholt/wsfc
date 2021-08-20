@@ -4,41 +4,21 @@
 
 {% block content  %}
 
+<section class="bg-primary-sam page-title">
+	<div class="container container--narrow">
+		<h2 class="text-center">Fixtures & Results</h2>
+	</div>
+</section>
+
 <section class="bg-dark">
     <div class="container text-center">
-        <h2 style='color: white'>Fixtures and Results</h2>
-        {% for match in list_of_matches %}
-              <p>{{ match.match_date|date:"j N" }} - {{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</p>
+        {% for match in list_of_matches reversed %}
+              <b>{{ match.match_date|date:"j N" }} - {{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</b>
+              <p>{{ match.match_report|linebreaks }}</p>
+              <hr>
         {% endfor %}
     </div>
 </section>
 
-<section class="bg-primary-sam">
-    <div class="container">
-        <div class="split">
-            <div>
-                <h2>A great bunch of lads</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vero, voluptatem nulla non pariatur quod!</p>
-            </div>
-            <div>
-                <img src="{% static 'img/ball.jpeg' %}" alt="squad pic">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="bg-primary">
-    <div class="container">
-        <div class="split">
-            <div>
-                <img src="{% static 'img/celebrate.jpg' %}" alt="squad pic">
-            </div>
-            <div>
-                <h2>Created with care</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo minima eum distinctio.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 {% endblock content  %}
