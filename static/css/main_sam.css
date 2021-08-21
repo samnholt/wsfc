@@ -87,6 +87,15 @@ table.center {
     margin-right: auto;
 }
 
+.nav-flex-icons {
+    flex-direction: row;
+}
+
+.nav-item {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .container--narrow {
     max-width: 300rem;
 }
@@ -112,6 +121,10 @@ table.center {
 
     .split > * + * {
         margin-left: 2em;
+    }
+
+    .main {
+        background-position: 50% 60%;
     }
 }
 
