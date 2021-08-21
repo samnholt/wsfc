@@ -13,9 +13,11 @@
 <section class="bg-dark">
     <div class="container text-center">
         {% for match in list_of_matches reversed %}
-              <b>{{ match.match_date|date:"j N" }} - {{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</b>
-              <p>{{ match.match_report|linebreaks }}</p>
-              <hr>
+            <details>
+                  <summary><b>{{ match.match_date|date:"j N" }} - {{ match.home_team }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team }}</b></summary>
+                  <p>{{ match.match_report|linebreaks }}</p>
+                  <hr>
+            </details>
         {% endfor %}
     </div>
 </section>
