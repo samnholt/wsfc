@@ -57,6 +57,10 @@ coverage.xml
 local_settings.py
 db.sqlite3
 
+# My django stuff
+docker-compose-prod.yml
+__pychache__/
+
 # Flask stuff:
 instance/
 .webassets-cache
