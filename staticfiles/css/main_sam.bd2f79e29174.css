@@ -1,0 +1,172 @@
+:root {
+    --clr-primary-200: #97bc62ff;
+    --clr-primary-400: #2c5f2d;
+  
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+  
+    --ff-primary: "Lato";
+    --ff-accent: "Bebas Neue";
+  }
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 375;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    background: url("");
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    color: var(--clr-neutral-100);
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+.main {
+    background-image: url("/static/img/robbie2.dee5eafaf980.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    font-family: var(--clr-neutral-100);
+    text-shadow: 2px 2px black;
+    margin-top: 34px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.text-center { 
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+table {
+    font-family: var(--clr-neutral-100);
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-flex-icons {
+    flex-direction: row;
+}
+
+.nav-item {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.container--narrow {
+    max-width: 300rem;
+}
+
+.container{
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+
+    .main {
+        background-position: 50% 60%;
+    }
+}
+
+.page-title {
+    padding: 0.5rem 0;
+}
+
+.page-title h2 {
+    color: var(--clr-neutral-100);
+    margin-bottom: 0;
+    text-shadow: black 2px 2px
+}
+
+
+.bg-light { 
+    background-color: var(--clr-primary-200);
+}
+
+.bg-primary-sam { 
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+}
+
+.bg-primary h2 {
+    color: var(--clr-primary-200)
+}
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-dark h2 {
+    color: var(--clr-primary-100);
+}
+
+#club-info{
+    width: 100%;
+}
+
+#club-info td, th {
+    color: var(--clr-neutral-100);
+    text-align: center
+}
+
